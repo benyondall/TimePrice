@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_award_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.timeprice.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--设置备注布局-->
+
+            <!--隐藏得两种布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_data_award"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间"
+                        android:padding="15dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/dialog_tv_date_award"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="getTime"
+                        android:text="日期：" />
+
+                    <TextView
+                        android:id="@+id/dialog_tv_time_award"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="时间：" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ll_repetition_award"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="重复"
+                        android:padding="15dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_evey_day_award"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="每天"
+                        android:layout_weight="2"
+                        android:background="@color/rc_draft_color"
+                        android:padding="5dp"
+                        android:drawableRight="@drawable/drop_downs"
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_show_times_award"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="时间：" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
